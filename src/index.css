@@ -1,0 +1,191 @@
+/* ============================================
+   Community Library – Global Styles
+   Adapted from the original style.css
+   ============================================ */
+
+/* Base Styles */
+body {
+  background: #cfe8ec;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #1a2a3a;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.navbar a.active {
+  background: #0066ff;
+  color: white;
+}
+
+.navbar a:hover {
+  background: #2c4257;
+}
+
+.logout-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.logout-btn:hover {
+  background: #c9302c;
+}
+
+/* Page Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-card {
+  max-width: 420px;
+  margin: 40px auto;
+}
+
+/* Cards & Boxes */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.box {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.low-stock-card {
+  border-left: 5px solid #d9534f;
+}
+
+/* Inputs & Form Controls */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1a2a3a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2c4257;
+}
+
+/* Secondary / gray button */
+.secondary-btn {
+  background: #6c757d;
+}
+
+.secondary-btn:hover {
+  background: #5a6268;
+}
+
+/* Danger / delete button */
+.danger-btn {
+  background: #d9534f;
+  margin-top: 4px;
+}
+
+.danger-btn:hover {
+  background: #c9302c;
+}
+
+/* Tables */
+table,
+.dashboard-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #1a2a3a;
+}
+
+/* Utility */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .navbar a {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+}
